@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+     <link rel="stylesheet" href="css/mdb.min.css" />
+       <link rel="stylesheet" href="package.json">
+       <link rel="stylesheet" href="style.css">
+       
+       <title>MDB</title>
+    
+</head>
+<body>
+        <script>
+          
+          function myFist(){
+          
+          /*  var a=document.getElementById("you_name").value;
+              if(a=="")
+              {
+                document.getElementById("t1").innerHTML="**Plese fill username";
+                return false;
+              }*/
+               
+             
+              
+
+              /* Allart Message..*/
+              var name= document.getElementById("t1").value;
+              var email= document.getElementById("t2").value;
+              var number= document.getElementById("t3").value;
+              var pwd= document.getElementById("t4").value;           
+              var dob= document.getElementById("t5").value;
+              var F=document.getElementById("t6").value;
+              var M=document.getElementById("t7").value;
+              var add=document.getElementById("t8").value;
+              var mass=document.getElementById("t9").value;
+              var submit=document.getElementById("t10").value;
+              
+        
+        //email id expression code
+        var pwd_expression = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-])/;
+        var letters = /^[A-Za-z]+$/;
+        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+        if(name=='')
+        {
+            alert('Please enter your name');
+        }
+        else if(!letters.test(name))
+        {
+            alert('Name field required only alphabet characters');
+        }
+        else if(email=='')
+        {
+            alert('Please enter your user email id');
+        }
+        else if (!filter.test(email))
+        {
+            alert('Invalid email');
+        }
+         else if(number==0)
+         {
+            alert('Please enter valid no.');
+         }
+          
+        else if(pwd=='')
+        {
+            alert('Please enter Password');
+        }
+        else if(!pwd_expression.test(pwd))
+        {
+            alert ('Upper case, Lower case, Special character and Numeric letter are required in Password filed');
+        }
+      
+        else if(document.getElementById("t4").value.length < 6)
+        {
+            alert ('Password minimum length is 6');
+        }
+        else if(document.getElementById("t4").value.length > 12)
+        {
+            alert ('Password max length is 12');
+        }
+        else if(dob==0)
+        {
+              alert('Please enter valid DOB');
+        }
+        else if(M=='' || F =='')
+        {
+          alert(' Please Choose Gender.');
+        }
+        else if(add=='')
+        {
+           alert('Please Enter your add..');
+        }
+        else if (mass=='')
+        {
+           alert('Please enter your message.');
+        }
+        else if(submit=='submit')
+        {
+            alert('Data submit successful submited..');
+        }
+        else
+        {        
+ 
+        }
+
+      }
+        </script>     
+  
+     <form class="hero"  onsubmit="return myFist()"> 
+          <h1> User Cantect Form</h1>
+
+          <div class="form-outline">
+            <input type="text" id="t1" name="name" class="form-control" value=""/>
+            <label class="form-label" for="name">Your Name</label> 
+            </div>
+             <span id="t1"></span>
+           <div class="form-outline">
+            <input type="email" id="t2" class="form-control" />
+            <label class="form-label" for="email">Email Id</label>
+           </div>
+
+          <div class="form-outline">
+            <input type="number" id="t3" class="form-control" />
+            <label class="form-label" for="number">Phone No.</label>
+          </div>
+
+          <div class="form-outline">
+            <input type="password" id="t4" class="form-control" />
+            <label class="form-label" for="password">password</label>
+          </div>
+                <!--checkbox -->
+             
+          <div class="radio">
+            <!-- DOB-->
+            <span class="spann">
+              
+                <label class="dobl" for="date">DOB</label>
+                <input type="datetime" class="dobi" id="t5">
+            </span> 
+       
+                 <!-- DOB-->
+        <span>
+       <label class="radiol" for="Default" >Female</label>
+       <input class="radioi" type="radio" name="f" id="t6" />
+         </span>
+     <span>
+     <label class="radiol" for="flexCheckChecked">Male</label>
+     <input class="radioi" type="radio"  name="f" id="t7"/>
+     </span>
+       </div><br>
+         
+           <!--checkbox -->
+             
+          <div class="form-outline">
+            <textarea class="form-control" id="t8" rows="3" cols="12"></textarea>
+            <label class="form-label" for="textArea">Address </label>
+          </div>
+          
+            <!-- ------------>
+            
+          <div class="form-outline">
+            <textarea class="form-control" id="t9" rows="5" cols="12"></textarea>
+            <label class="form-label" for="textArea">Message</label>
+          </div>
+
+          <div>
+            <button type="submit" id="t10" value="submit">Submit</button>
+             </div>
+             </form>
+  
+      <script type="text/javascript" src="js/mdb.min.js"> </script> 
+    <!-- Custom scripts -->
+  
+</body>
+
+</html>

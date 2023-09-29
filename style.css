@@ -1,0 +1,67 @@
+  
+ body{
+    font-family:'pappins',sans-serif ;
+    font-weight: 100;
+    background: #77b579;
+
+ }
+ h1{
+   text-align: center;
+     padding-top: 25px;
+     padding-bottom: 15px;
+ }
+ 
+ form{
+     border: 2px rgb(112, 160, 215) solid;
+      margin: auto;
+      margin-top: 45px;
+      width: 90%;
+      max-width: 600px;
+      background: #aa9e9e;
+      
+}
+  
+.form-control{
+   margin-bottom: 35px;
+} 
+
+input , textarea{
+    width:900% ;
+    padding: 7%;
+    border: 1px solid #fff;
+    color: #d0c7c7;
+    background: transparent;
+    font-size: 15px;     
+}
+
+label{
+   
+   height: 100%;
+   background-size: cover;
+   padding: 10px;
+}
+ 
+ 
+button{
+    padding: 12px 0;
+    color: black;
+    outline: none;
+    border: 1px,solid #fff;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+  .radioi{
+     width: 35px;
+     height: 28px;
+     margin: 5%;
+  }
+  .dobi{
+    width: 140px;
+    height: 1px;
+     
+  }
+  .spann input {
+     padding: 3%;
+  }
